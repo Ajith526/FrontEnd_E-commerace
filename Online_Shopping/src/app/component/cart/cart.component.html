@@ -1,0 +1,38 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+  <h2>Cart</h2>
+  <div *ngIf="cartItems.length === 0">Your cart is empty</div>
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <img [src]="item.image" alt="Product Image" class="product-image">
+    <ul>
+      <h3>{{ item.name }}</h3>
+      <li><p>{{ item.price | currency }}</p></li>
+      <li><p>Quantity: {{ item.quantity }}</p></li>
+    </ul>
+    <div>
+      <button (click)="removeFromCart(item.id)" class="btn">Remove</button>
+    </div>
+  </div>
+  <div class="total-amount" *ngIf="cartItems.length > 0">
+    Total Amount: {{ total | currency }}
+    <br>
+    <br>
+    <button class="btn dialog-button" (click)="openPopup()">Check Out</button>
+  </div>
+
+  <div *ngIf="popupVisible" class="popup">
+    <div class="dialog-container">
+      <h2>Your Order is Successfully Placed!</h2>
+      <p>Thank you for your purchase.</p>
+      <div>
+        <button (click)="handleOrderConfirmation()">OK</button><hr>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<nav class="navbar navbar-light bg-green">
+  <a class="navbar-brand" style="color: rgba(239, 249, 248, 0.925);"></a>
+</nav>

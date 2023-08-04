@@ -1,0 +1,26 @@
+.img-fluid{
+  position: relative;
+  height: 485px;
+   }
+
+   .hero-image{
+    height: 4rem;
+  }
+
+   .mb-5 {
+    margin-bottom: -2rem!important;
+}
+.navbar {
+  margin-left: 3rem;
+    background-color: white;
+    color: rgb(224, 231, 227);
+    
+  }
+  .nav{
+    color: rgb(224, 231, 227);
+    padding: 30px;
+  }
+ .container{
+  margin-top: 1rem;
+  width: 57rem;
+ }

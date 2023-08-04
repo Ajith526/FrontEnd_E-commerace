@@ -1,0 +1,166 @@
+<!-- <section class="credit-card">
+    <div class="container">
+      <div class="card-holder">
+        <div class="card-box bg-news">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="img-box">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form (ngSubmit)="updateProduct()">
+                <div class="card-details">
+                  <h3 class="title">Update Product</h3>
+                  <div class="row">
+                    <div class="form-group col-sm-7">
+                      <div class="inner-addon right-addon">
+                        <label for="card-holder">ID</label>
+                        <i class="far fa-user"></i>
+                        <input id="id" type="text" class="form-control" placeholder="id" aria-label="id" aria-describedby="basic-addon1" [(ngModel)]="product.id" name="id">
+                      </div>	
+                    </div>
+                    <div class="form-group col-sm-5">
+                      <label for="">Name</label>
+                      <div class="input-group expiration-date">
+                        <input type="text" class="form-control" placeholder="name" aria-describedby="basic-addon1" [(ngModel)]="product.name" name="name">
+                    
+                        <input type="text" class="form-control" placeholder="name" aria-label="name" aria-describedby="basic-addon1" [(ngModel)]="product.name" name="name">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-8">
+                      <div class="inner-addon right-addon">
+                        <label for="card-number">Image URL</label>
+                        <i class="far fa-credit-card"></i>
+                        <input id="Image" type="text" class="form-control" placeholder="Image" aria-label="Card Holder" aria-describedby="basic-addon1" [(ngModel)]="product.Image" name="Image">
+                      </div>	
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="cvc">Price</label>
+                      <input id="Price" type="number" class="form-control" placeholder="Price" aria-label="Price" aria-describedby="basic-addon1" [(ngModel)]="product.Price" name="price">
+                    </div>
+                    <div class="form-group col-sm-12">
+                      <button type="submit" class="btn btn-primary btn-block">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+              </form> -->
+           <!--/col-lg-6 -->
+        <!--/row -->
+      <!--/card-box -->
+    <!--/card-holder -->
+   <!--/container -->
+<!-- update.component.html -->
+
+<!-- <section class="credit-card">
+    <div class="container">
+      <div class="card-holder">
+        <div class="card-box bg-news">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="img-box">
+                <img src="" class="img-fluid" />
+              </div>
+              <header>
+                <nav>
+                    
+                </nav>
+              </header>
+            </div>
+            <div class="col-lg-6">
+              <form (ngSubmit)="updateProduct()">
+                <div class="card-details">
+                  <h3 class="title" style="font-size: 30px;">Update Product</h3>
+                  <div class="row">
+                    <div class="form-group col-sm-7">
+                      <div class="inner-addon right-addon">
+                        <label for="id">Name</label>
+                        <i class="far fa-user"></i>
+                        <input id="name" type="text" class="form-control" placeholder="Name" [(ngModel)]="product.name" name="name">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-5">
+                      <label for="name">Id</label>
+                      <div class="input-group expiration-date">
+                        <input type="text" class="form-control" placeholder="Id" [(ngModel)]="product.id" name="id">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-8">
+                      <div class="inner-addon right-addon">
+                        <label for="image">Image URL</label>
+                        <i class="far fa-credit-card"></i>
+                        <input id="image" type="text" class="form-control" placeholder="Image URL" [(ngModel)]="product.image" name="image">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="price">Price</label>
+                      <input id="price" type="number" class="form-control" placeholder="Price" [(ngModel)]="product.price" name="price">
+                    </div>
+                    <div class="form-group col-sm-12">
+                      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form> -->
+         
+  <!-- </section> -->
+
+  <section class="credit-card">
+    <div class="container">
+      <div class="card-holder">
+        <div class="card-box bg-news">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="img-box">
+                <img src="" class="img-fluid" />
+              </div>
+              <header>
+                <nav>
+                  <!-- Navigation content -->
+                </nav>
+              </header>
+            </div>
+            <div class="col-lg-6">
+              <form (ngSubmit)="updateProduct()">
+                <div class="card-details">
+                  <h3 class="title" style="font-size: 30px;">Update Product</h3>
+                  <div class="row">
+                    <div class="form-group col-sm-7">
+                      <div class="inner-addon right-addon">
+                        <label for="name">Name</label>
+                        <i class="far fa-user"></i>
+                        <input id="name" type="text" class="form-control" placeholder="Name" [(ngModel)]="product.name" name="name" required>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-5">
+                      <label for="id">Id</label>
+                      <div class="input-group expiration-date">
+                        <input type="text" class="form-control" placeholder="Id" [(ngModel)]="product.id" name="id" required>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-8">
+                      <div class="inner-addon right-addon">
+                        <label for="image">Image URL</label>
+                        <i class="far fa-credit-card"></i>
+                        <input id="image" type="text" class="form-control" placeholder="Image URL" [(ngModel)]="product.image" name="image" required>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="price">Price</label>
+                      <input id="price" type="number" class="form-control" placeholder="Price" [(ngModel)]="product.price" name="price" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div><!--/col-lg-6 -->
+          </div><!--/row -->
+        </div><!--/card-box -->
+      </div><!--/card-holder -->
+    </div><!--/container -->
+  </section>
+  
+  
+  

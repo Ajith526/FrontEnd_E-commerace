@@ -1,0 +1,193 @@
+/* 
+h2 {
+    text-align: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 0;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(9, 74, 134);
+  }
+
+  
+
+ */
+ 
+  
+
+
+ h1 {
+  color:whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: dotted;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header {
+  background-color:#333;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.modal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 200px;
+  z-index: 100; 
+overflow-y: auto;
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: 
+    url(https://img.freepik.com/free-photo/abstract-blur-empty-green-gradient-studio-well-use-as-background-website-template-frame-business-report_1258-52616.jpg?w=740&t=st=1686902599~exp=1686903199~hmac=ee98502756a8f9ac8d4a0fbef9a6e7ebc294b89306918a6a670dcda4b88311d3);
+  background-size: cover;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .modal__container {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1000px;
+    min-height: 20px;
+    margin-bottom: 125px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); }
+  .modal__featured {
+    position: relative;
+    -ms-flex: 1;
+        flex: 1;
+    min-width:400px;
+    padding: 20px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+
+form {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 8px;
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+  background: rgb(2,0,36);
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  /* background: linear-gradient(to bottom, #1e458f, #f2fcfe); */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c92d2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #147cb2;
+}
+

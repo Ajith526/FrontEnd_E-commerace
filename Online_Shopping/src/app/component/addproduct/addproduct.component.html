@@ -1,0 +1,32 @@
+<body>
+  <!-- <!-- <header>
+    <nav>
+      <h1>
+        Add Product 
+      </h1>
+    </nav> -->
+  <!-- </header> --> 
+  
+  
+
+<div class="modal">
+  <div class="modal__container">
+    <div class="modal__featured">
+      <button type="button" class="button--transparent button--close">
+
+
+
+<form #productForm="ngForm" (submit)="addProduct()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="newProduct.name" required>
+
+  <label for="price">Price:</label>
+  <input type="number" id="price" name="price" [(ngModel)]="newProduct.price" required>
+
+  <label for="image">Image URL:</label>
+  <input type="text" id="image" name="image" [(ngModel)]="newProduct.image" required>
+  <br>
+  <br>
+  <button type="submit">Add Product</button>
+</form>
+
